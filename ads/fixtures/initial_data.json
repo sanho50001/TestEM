@@ -1,0 +1,250 @@
+[
+    {
+        "model": "ads.category",
+        "pk": 1,
+        "fields": {
+            "name": "Одежда",
+            "slug": "clothes"
+        }
+    },
+    {
+        "model": "ads.category",
+        "pk": 2,
+        "fields": {
+            "name": "Одежда для собак",
+            "slug": "dog-clothes"
+        }
+    },
+    {
+        "model": "ads.category",
+        "pk": 3,
+        "fields": {
+            "name": "Оборудование",
+            "slug": "equipment"
+        }
+    },
+    {
+        "model": "ads.category",
+        "pk": 4,
+        "fields": {
+            "name": "Электроника",
+            "slug": "electronics"
+        }
+    },
+    {
+        "model": "ads.category",
+        "pk": 5,
+        "fields": {
+            "name": "Книги",
+            "slug": "books"
+        }
+    },
+    {
+        "model": "ads.category",
+        "pk": 6,
+        "fields": {
+            "name": "Спорт",
+            "slug": "sport"
+        }
+    },
+    {
+        "model": "ads.category",
+        "pk": 7,
+        "fields": {
+            "name": "Дом и сад",
+            "slug": "home-garden"
+        }
+    },
+    {
+        "model": "ads.category",
+        "pk": 8,
+        "fields": {
+            "name": "Игрушки",
+            "slug": "toys"
+        }
+    },
+    {
+        "model": "ads.category",
+        "pk": 9,
+        "fields": {
+            "name": "Музыкальные инструменты",
+            "slug": "musical-instruments"
+        }
+    },
+    {
+        "model": "ads.category",
+        "pk": 10,
+        "fields": {
+            "name": "Коллекционирование",
+            "slug": "collectibles"
+        }
+    },
+    {
+        "model": "ads.item",
+        "pk": 1,
+        "fields": {
+            "title": "Джинсы Levi's 501",
+            "description": "Классические джинсы Levi's 501 в отличном состоянии. Размер 32/32.",
+            "category": 1,
+            "condition": "like_new",
+            "owner": 3,
+            "created_at": "2023-06-15T10:30:00Z",
+            "updated_at": "2023-06-15T10:30:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "ads.item",
+        "pk": 2,
+        "fields": {
+            "title": "Куртка для собаки",
+            "description": "Теплая куртка для собаки среднего размера. Носили всего пару раз.",
+            "category": 2,
+            "condition": "like_new",
+            "owner": 3,
+            "created_at": "2023-08-22T14:15:00Z",
+            "updated_at": "2023-08-22T14:15:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "ads.item",
+        "pk": 3,
+        "fields": {
+            "title": "Профессиональный миксер",
+            "description": "Профессиональный кухонный миксер Bosch. В отличном состоянии.",
+            "category": 3,
+            "condition": "good",
+            "owner": 2,
+            "created_at": "2023-11-05T09:45:00Z",
+            "updated_at": "2023-11-05T09:45:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "ads.item",
+        "pk": 4,
+        "fields": {
+            "title": "iPhone 12",
+            "description": "iPhone 12 128GB в идеальном состоянии. С чехлом и зарядкой.",
+            "category": 4,
+            "condition": "like_new",
+            "owner": 2,
+            "created_at": "2024-01-10T16:20:00Z",
+            "updated_at": "2024-01-10T16:20:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "ads.item",
+        "pk": 5,
+        "fields": {
+            "title": "Коллекция книг Стивена Кинга",
+            "description": "Собрание сочинений Стивена Кинга в 15 томах. Все книги в отличном состоянии.",
+            "category": 5,
+            "condition": "good",
+            "owner": 3,
+            "created_at": "2024-02-18T11:30:00Z",
+            "updated_at": "2024-02-18T11:30:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "ads.item",
+        "pk": 6,
+        "fields": {
+            "title": "Велосипед Trek",
+            "description": "Горный велосипед Trek в хорошем состоянии. Требуется небольшая настройка.",
+            "category": 6,
+            "condition": "good",
+            "owner": 2,
+            "created_at": "2024-03-25T13:45:00Z",
+            "updated_at": "2024-03-25T13:45:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "ads.item",
+        "pk": 7,
+        "fields": {
+            "title": "Набор садовых инструментов",
+            "description": "Полный набор садовых инструментов. Все инструменты в отличном состоянии.",
+            "category": 7,
+            "condition": "like_new",
+            "owner": 3,
+            "created_at": "2024-04-30T10:15:00Z",
+            "updated_at": "2024-04-30T10:15:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "ads.item",
+        "pk": 8,
+        "fields": {
+            "title": "LEGO Star Wars",
+            "description": "Набор LEGO Star Wars Millennium Falcon. Новый, в заводской упаковке.",
+            "category": 8,
+            "condition": "new",
+            "owner": 2,
+            "created_at": "2024-05-12T15:30:00Z",
+            "updated_at": "2024-05-12T15:30:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "ads.item",
+        "pk": 9,
+        "fields": {
+            "title": "Гитара Fender",
+            "description": "Электрогитара Fender Stratocaster. В отличном состоянии, с чехлом.",
+            "category": 9,
+            "condition": "good",
+            "owner": 3,
+            "created_at": "2024-06-20T12:00:00Z",
+            "updated_at": "2024-06-20T12:00:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "ads.item",
+        "pk": 10,
+        "fields": {
+            "title": "Монеты СССР",
+            "description": "Коллекция монет СССР 1960-1990 годов. Все монеты в хорошем состоянии.",
+            "category": 10,
+            "condition": "good",
+            "owner": 2,
+            "created_at": "2024-07-05T14:45:00Z",
+            "updated_at": "2024-07-05T14:45:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "ads.item",
+        "pk": 11,
+        "fields": {
+            "title": "Зимняя куртка",
+            "description": "Теплая зимняя куртка Columbia. Размер M, в отличном состоянии.",
+            "category": 1,
+            "condition": "like_new",
+            "owner": 2,
+            "created_at": "2024-08-15T09:30:00Z",
+            "updated_at": "2024-08-15T09:30:00Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "ads.item",
+        "pk": 12,
+        "fields": {
+            "title": "Комбинезон для щенка",
+            "description": "Теплый комбинезон для щенка. Размер S, новый.",
+            "category": 2,
+            "condition": "new",
+            "owner": 3,
+            "created_at": "2024-09-22T16:20:00Z",
+            "updated_at": "2024-09-22T16:20:00Z",
+            "is_active": true
+        }
+    }
+] 

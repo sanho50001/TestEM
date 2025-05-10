@@ -1,0 +1,22 @@
+{% extends 'ads/base.html' %}
+{% load i18n %}
+
+
+{% block title %}{% trans "Выход - Бартерная система" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="mb-0">{% trans "Вы вышли из системы" %}</h2>
+                    <hr>
+                    <p>{% trans "Спасибо за использование нашего сервиса!" %}</p>
+                    <a href="{% url 'login' %}" class="btn btn-primary">{% trans "Войти снова" %}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

@@ -1,0 +1,60 @@
+{% extends 'ads/base.html' %}
+{% load i18n %}
+
+
+{% block title %}{{ item.title }} - {% trans "Бартерная система" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                {% if item.image %}
+                <img src="{{ item.image.url }}" class="card-img-top" alt="{{ item.title }}">
+                {% endif %}
+                <div class="card-body">
+                    <h1 class="card-title">{{ item.title }}</h1>
+                    <p class="card-text">{{ item.description }}</p>
+                    <p class="card-text">
+                        <small class="text-muted">
+                            {% trans "Владелец" %}: {{ item.owner.username }}
+                        </small>
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">
+                            {% trans "Категория" %}: {{ item.category.name }}
+                        </small>
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">
+                            {% trans "Добавлено" %}: {{ item.created_at|date:"d.m.Y H:i" }}
+                        </small>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            {% if user.is_authenticated and user != item.owner %}
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">{% trans "Предложить обмен" %}</h5>
+                    <form method="post" action="{% url 'create_exchange_proposal' item.id %}">
+                        {% csrf_token %}
+                        <input type="hidden" name="item" value="{{ item.id }}">
+                        <div class="form-group mb-3">
+                            <label for="id_title">{% trans "Название предложения" %}</label>
+                            <input type="text" class="form-control" id="id_title" name="title" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="id_description">{% trans "Описание" %}</label>
+                            <textarea class="form-control" id="id_description" name="description" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">{% trans "Отправить предложение" %}</button>
+                    </form>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %} 

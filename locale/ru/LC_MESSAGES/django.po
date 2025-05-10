@@ -1,0 +1,433 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-06 12:01+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\ads\templates\ads\base.html:4
+msgid "Бартерная система"
+msgstr "Barter System"
+
+#: .\ads\templates\ads\base.html:12
+msgid "Объявления"
+msgstr "Advertisements"
+
+#: .\ads\templates\ads\base.html:13
+msgid "Создать объявление"
+msgstr "Create Advertisement"
+
+#: .\ads\templates\ads\base.html:14
+msgid "Предложения обмена"
+msgstr "Exchange Proposals"
+
+#: .\ads\templates\ads\base.html:15
+msgid "Профиль"
+msgstr "Profile"
+
+#: .\ads\templates\ads\base.html:16
+msgid "Выйти"
+msgstr "Logout"
+
+#: .\ads\templates\ads\base.html:17
+msgid "Войти"
+msgstr "Login"
+
+#: .\ads\templates\ads\base.html:18
+msgid "Регистрация"
+msgstr "Registration"
+
+#: .\ads\templates\ads\base.html:25
+msgid "Бартерная система. Все права защищены."
+msgstr "Barter System. All rights reserved."
+
+#: .\ads\templates\ads\profile.html:3
+msgid "Профиль - Бартерная система"
+msgstr "Profile - Barter System"
+
+#: .\ads\templates\ads\profile.html:6
+msgid "Профиль пользователя"
+msgstr "User Profile"
+
+#: .\ads\templates\ads\profile.html:9
+msgid "Сохранить изменения"
+msgstr "Save Changes"
+
+#: .\ads\templates\ads\profile.html:13
+msgid "Мои объявления"
+msgstr "My Advertisements"
+
+#: .\ads\templates\ads\item_detail.html:15
+msgid "Нет изображения"
+msgstr "No Image"
+
+#: .\ads\templates\ads\item_detail.html:19
+msgid "Категория:"
+msgstr "Category:"
+
+#: .\ads\templates\ads\item_detail.html:20
+msgid "Состояние:"
+msgstr "Condition:"
+
+#: .\ads\templates\ads\item_detail.html:21
+msgid "Статус:"
+msgstr "Status:"
+
+#: .\ads\templates\ads\item_detail.html:21
+msgid "Активно"
+msgstr "Active"
+
+#: .\ads\templates\ads\item_detail.html:21
+msgid "Неактивно"
+msgstr "Inactive"
+
+#: .\ads\templates\ads\item_detail.html:24
+msgid "Подробнее"
+msgstr "Details"
+
+#: .\ads\templates\ads\item_detail.html:25
+msgid "Редактировать"
+msgstr "Edit"
+
+#: .\ads\templates\ads\item_detail.html:26
+msgid "Удалить"
+msgstr "Delete"
+
+#: .\ads\templates\ads\profile.html:16
+msgid "У вас пока нет объявлений"
+msgstr "You don't have any advertisements yet"
+
+#: .\ads\templates\ads\profile.html:20
+msgid "Статистика обменов"
+msgstr "Exchange Statistics"
+
+#: .\ads\templates\ads\profile.html:21
+msgid "Успешные обмены"
+msgstr "Successful Exchanges"
+
+#: .\ads\templates\ads\profile.html:22
+msgid "Активные предложения"
+msgstr "Active Proposals"
+
+#: .\ads\templates\ads\profile.html:23
+msgid "Рейтинг"
+msgstr "Rating"
+
+#: .\ads\templates\ads\proposal_detail.html:3
+msgid "Предложение обмена - Бартерная система"
+msgstr "Exchange Proposal - Barter System"
+
+#: .\ads\templates\ads\proposal_detail.html:6
+msgid "Предложение обмена"
+msgstr "Exchange Proposal"
+
+#: .\ads\templates\ads\proposal_detail.html:9
+msgid "Предложенный предмет"
+msgstr "Proposed Item"
+
+#: .\ads\templates\ads\proposal_detail.html:13
+msgid "Желаемый предмет"
+msgstr "Desired Item"
+
+#: .\ads\templates\ads\proposal_detail.html:17
+msgid "Владелец:"
+msgstr "Owner:"
+
+#: .\ads\templates\ads\proposal_detail.html:21
+msgid "Информация о предложении"
+msgstr "Proposal Information"
+
+#: .\ads\templates\ads\proposal_detail.html:22
+msgid "Сообщение:"
+msgstr "Message:"
+
+#: .\ads\templates\ads\proposal_detail.html:23
+msgid "Создано:"
+msgstr "Created:"
+
+#: .\ads\templates\ads\proposal_detail.html:24
+msgid "Обновлено:"
+msgstr "Updated:"
+
+#: .\ads\templates\ads\proposal_detail.html:27
+msgid "Действия"
+msgstr "Actions"
+
+#: .\ads\templates\ads\proposal_detail.html:28
+msgid "Принять предложение"
+msgstr "Accept Proposal"
+
+#: .\ads\templates\ads\proposal_detail.html:29
+msgid "Отклонить предложение"
+msgstr "Reject Proposal"
+
+#: .\ads\templates\ads\proposal_detail.html:33
+msgid "Завершение обмена"
+msgstr "Exchange Completion"
+
+#: .\ads\templates\ads\proposal_detail.html:34
+msgid "Предложение принято. После завершения обмена нажмите кнопку ниже."
+msgstr "Proposal accepted. After completing the exchange, click the button below."
+
+#: .\ads\templates\ads\proposal_detail.html:35
+msgid "Завершить обмен"
+msgstr "Complete Exchange"
+
+#: .\ads\templates\ads\proposal_detail.html:36
+msgid "Назад к списку предложений"
+msgstr "Back to Proposals List"
+
+#: .\ads\templates\ads\proposal_list.html:3
+msgid "Предложения обмена - Бартерная система"
+msgstr "Exchange Proposals - Barter System"
+
+#: .\ads\templates\ads\proposal_list.html:6
+msgid "Отправленные предложения"
+msgstr "Sent Proposals"
+
+#: .\ads\templates\ads\proposal_list.html:7
+msgid "Ваш предмет"
+msgstr "Your Item"
+
+#: .\ads\templates\ads\proposal_list.html:11
+msgid "Полученные предложения"
+msgstr "Received Proposals"
+
+#: .\ads\templates\ads\proposal_list.html:12
+msgid "От:"
+msgstr "From:"
+
+#: .\ads\templates\ads\proposal_list.html:13
+msgid "Получено:"
+msgstr "Received:"
+
+#: .\ads\templates\ads\proposal_list.html:17
+msgid "У вас нет отправленных предложений"
+msgstr "You don't have any sent proposals"
+
+#: .\ads\templates\ads\proposal_list.html:21
+msgid "У вас нет полученных предложений"
+msgstr "You don't have any received proposals"
+
+#: .\ads\templates\ads\item_list.html:3
+msgid "Объявления - Бартерная система"
+msgstr "Advertisements - Barter System"
+
+#: .\ads\templates\ads\item_list.html:6
+msgid "Поиск"
+msgstr "Search"
+
+#: .\ads\templates\ads\item_list.html:7
+msgid "Категории"
+msgstr "Categories"
+
+#: .\ads\templates\ads\item_list.html:8
+msgid "Все категории"
+msgstr "All Categories"
+
+#: .\ads\templates\ads\item_list.html:12
+msgid "Объявления не найдены"
+msgstr "No Advertisements Found"
+
+#: .\ads\templates\ads\item_form.html:3
+msgid "Редактирование объявления"
+msgstr "Edit Advertisement"
+
+#: .\ads\templates\ads\item_form.html:6
+msgid "Отмена"
+msgstr "Cancel"
+
+#: .\ads\templates\ads\item_form.html:10
+msgid "Описание"
+msgstr "Description"
+
+#: .\ads\templates\ads\item_detail.html:30
+msgid "Информация о владельце"
+msgstr "Owner Information"
+
+#: .\ads\templates\ads\item_detail.html:31
+msgid "Телефон:"
+msgstr "Phone:"
+
+#: .\ads\templates\ads\item_detail.html:32
+msgid "Адрес:"
+msgstr "Address:"
+
+#: .\ads\templates\ads\item_detail.html:33
+msgid "Рейтинг:"
+msgstr "Rating:"
+
+#: .\ads\templates\ads\item_detail.html:37
+msgid "Предложить обмен"
+msgstr "Propose Exchange"
+
+#: .\ads\templates\ads\item_detail.html:41
+msgid "Управление объявлением"
+msgstr "Advertisement Management"
+
+#: .\ads\templates\ads\item_confirm_delete.html:3
+msgid "Удаление объявления - Бартерная система"
+msgstr "Delete Advertisement - Barter System"
+
+#: .\ads\templates\ads\item_confirm_delete.html:6
+msgid "Удаление объявления"
+msgstr "Delete Advertisement"
+
+#: .\ads\templates\ads\item_confirm_delete.html:7
+msgid "Вы уверены, что хотите удалить объявление"
+msgstr "Are you sure you want to delete this advertisement"
+
+#: .\ads\templates\registration\login.html:3
+msgid "Вход - Бартерная система"
+msgstr "Login - Barter System"
+
+#: .\ads\templates\registration\login.html:6
+msgid "Вход в систему"
+msgstr "System Login"
+
+#: .\ads\templates\registration\login.html:9
+msgid "Неверное имя пользователя или пароль."
+msgstr "Invalid username or password."
+
+#: .\ads\templates\registration\login.html:12
+msgid "Нет аккаунта? Зарегистрироваться"
+msgstr "No account? Register"
+
+#: .\ads\templates\registration\logged_out.html:3
+msgid "Выход - Бартерная система"
+msgstr "Logout - Barter System"
+
+#: .\ads\templates\registration\logged_out.html:6
+msgid "Выход из системы"
+msgstr "System Logout"
+
+#: .\ads\templates\registration\logged_out.html:7
+msgid "Вы успешно вышли из системы."
+msgstr "You have successfully logged out of the system."
+
+#: .\ads\templates\registration\logged_out.html:8
+msgid "Войти снова"
+msgstr "Login Again"
+
+#: .\ads\templates\registration\logged_out.html:9
+msgid "На главную"
+msgstr "To Home"
+
+#: .\ads\templates\ads\base.html:3
+msgid "Добро пожаловать в Бартерную систему"
+msgstr "Welcome to Barter System"
+
+#: .\ads\templates\ads\base.html:4
+msgid "Обменивайтесь вещами легко и безопасно"
+msgstr "Exchange items easily and safely"
+
+#: .\ads\templates\ads\base.html:6
+msgid "Поиск"
+msgstr "Search"
+
+#: .\ads\templates\ads\base.html:7
+msgid "Категории"
+msgstr "Categories"
+
+#: .\ads\templates\ads\base.html:8
+msgid "Последние объявления"
+msgstr "Latest Advertisements"
+
+#: .\ads\templates\ads\base.html:12
+msgid "Пока нет объявлений"
+msgstr "No Advertisements Yet"
+
+#: .\ads\templates\ads\item_detail.html:14
+msgid "Добавлено:"
+msgstr "Added:"
+
+#: .\ads\templates\ads\proposal_list.html:14
+msgid "Отправлено:"
+msgstr "Sent:"
+
+#: .\ads\templates\registration\password_reset_done.html:3
+msgid "Письмо отправлено - Бартерная система"
+msgstr "Email Sent - Barter System"
+
+#: .\ads\templates\registration\password_reset_done.html:6
+msgid "Письмо отправлено"
+msgstr "Email Sent"
+
+#: .\ads\templates\registration\password_reset_done.html:7
+msgid "Мы отправили вам инструкции по сбросу пароля на указанный email."
+msgstr "We have sent password reset instructions to your email."
+
+#: .\ads\templates\registration\password_reset_done.html:8
+msgid "Если вы не получили письмо, убедитесь, что вы ввели правильный адрес email и проверьте папку 'Спам'."
+msgstr "If you haven't received the email, make sure you entered the correct email address and check your 'Spam' folder."
+
+#: .\ads\templates\registration\password_reset_done.html:9
+msgid "Вернуться к входу"
+msgstr "Return to Login"
+
+#: .\ads\templates\registration\register.html:3
+msgid "Регистрация - Бартерная система"
+msgstr "Registration - Barter System"
+
+#: .\ads\templates\registration\register.html:6
+msgid "Зарегистрироваться"
+msgstr "Register"
+
+#: .\ads\templates\registration\register.html:9
+msgid "Уже есть аккаунт? Войти"
+msgstr "Already have an account? Login"
+
+#: .\ads\views.py:123
+msgid "Объявление успешно создано!"
+msgstr "Advertisement successfully created!"
+
+#: .\ads\views.py:145
+msgid "Объявление успешно обновлено!"
+msgstr "Advertisement successfully updated!"
+
+#: .\ads\views.py:167
+msgid "Объявление успешно удалено!"
+msgstr "Advertisement successfully deleted!"
+
+#: .\ads\views.py:189
+msgid "Предложение обмена отправлено!"
+msgstr "Exchange proposal sent!"
+
+#: .\ads\views.py:212
+msgid "У вас нет доступа к этому предложению!"
+msgstr "You don't have access to this proposal!"
+
+#: .\ads\views.py:234
+msgid "Предложение обмена принято!"
+msgstr "Exchange proposal accepted!"
+
+#: .\ads\views.py:256
+msgid "Предложение обмена отклонено!"
+msgstr "Exchange proposal rejected!"
+
+#: .\ads\views.py:278
+msgid "Обмен успешно завершен!"
+msgstr "Exchange successfully completed!"
+
+#: .\ads\views.py:300
+msgid "Профиль успешно обновлен!"
+msgstr "Profile successfully updated!"
+
+#: .\ads\views.py:322
+msgid "Регистрация успешно завершена!"
+msgstr "Registration successfully completed!"

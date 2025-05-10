@@ -1,0 +1,74 @@
+{% extends 'ads/base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Предложение обмена - Бартерная система" %}   {% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="mb-0">{% trans "Предложение обмена" %}  </h2>
+            </div>
+            <div class="card-body">
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <h5>{% trans "Ваш предмет" %}  </h5>
+                        <div class="card">
+                            {% if form.offered_item.value.image %}
+                            <img src="{{ form.offered_item.value.image.url }}" class="card-img-top" alt="{{ form.offered_item.value.title }}">
+                            {% else %}
+                            <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height: 200px;">
+                                <span class="text-muted">{% trans "Нет изображения" %}  </span>
+                            </div>
+                            {% endif %}
+                            <div class="card-body">
+                                <h5 class="card-title">{{ form.offered_item.value.title }}</h5>
+                                <p class="card-text">{{ form.offered_item.value.description|truncatewords:20 }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>{% trans "Желаемый предмет" %}  </h5>
+                        <div class="card">
+                            {% if desired_item.image %}
+                            <img src="{{ desired_item.image.url }}" class="card-img-top" alt="{{ desired_item.title }}">
+                            {% else %}
+                            <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height: 200px;">
+                                <span class="text-muted">{% trans "Нет изображения" %}  </span>
+                            </div>
+                            {% endif %}
+                            <div class="card-body">
+                                <h5 class="card-title">{{ desired_item.title }}</h5>
+                                <p class="card-text">{{ desired_item.description|truncatewords:20 }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form method="post">
+                    {% csrf_token %}
+                    
+                    {% for field in form %}
+                    <div class="mb-3">
+                        <label for="{{ field.id_for_label }}" class="form-label">
+                            {{ field.label }}
+                        </label>
+                        {{ field.errors }}
+                        {{ field }}
+                        {% if field.help_text %}
+                        <div class="form-text">{{ field.help_text }}</div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">{% trans "Отправить предложение" %}  </button>
+                        <a href="{% url 'item_detail' desired_item.pk %}" class="btn btn-secondary">{% trans "Отмена" %}  </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

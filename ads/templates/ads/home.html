@@ -1,0 +1,70 @@
+{% extends 'ads/base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Главная - Бартерная система" %}  {% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-8">
+        <h1>{% trans "Добро пожаловать в Бартерную систему" %}  </h1>
+        <p class="lead">{% trans "Обменивайтесь вещами легко и безопасно" %}  </p>
+    </div>
+    <div class="col-md-4">
+        <form action="{% url 'item_list' %}" method="get" class="d-flex">
+            <input type="text" name="search" class="form-control me-2" placeholder="Поиск объявлений...">
+            <button type="submit" class="btn btn-primary">{% trans "Поиск" %}  </button>
+        </form>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col-12">
+        <h2>{% trans "Категории" %}  </h2>
+        <div class="row">
+            {% for category in categories %}
+            <div class="col-md-3 mb-3">
+                <a href="{% url 'item_list' %}?category={{ category.slug }}" class="text-decoration-none">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ category.name }}</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <h2>{% trans "Последние объявления" %}  </h2>
+        <div class="row">
+            {% for item in items %}
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 item-card">
+                    {% if item.image %}
+                    <img src="{{ item.image.url }}" class="card-img-top item-image" alt="{{ item.title }}">
+                    {% else %}
+                    <div class="card-img-top item-image bg-light d-flex align-items-center justify-content-center">
+                        <span class="text-muted">{% trans "Нет изображения" %}  </span>
+                    </div>
+                    {% endif %}
+                    <div class="card-body">
+                        <h5 class="card-title">{{ item.title }}</h5>
+                        <p class="card-text text-muted">{{ item.category.name }}</p>
+                        <p class="card-text">{{ item.description|truncatewords:20 }}</p>
+                    </div>
+                    <div class="card-footer bg-white">
+                        <a href="{% url 'item_detail' item.pk %}" class="btn btn-primary w-100">{% trans "Подробнее" %}  </a>
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            <div class="col-12">
+                <p class="text-muted">{% trans "Пока нет объявлений" %}  </p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %} 

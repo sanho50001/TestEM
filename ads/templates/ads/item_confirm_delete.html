@@ -1,0 +1,27 @@
+{% extends 'ads/base.html' %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Удаление объявления - Бартерная система" %}{% endtrans %}{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="mb-0">{% trans "Удаление объявления" %}{% endtrans %}</h2>
+            </div>
+            <div class="card-body">
+                <p class="lead">{% trans "Вы уверены, что хотите удалить объявление" %}{% endtrans %} "{{ item.title }}"?</p>
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-danger">{% trans "Удалить" %}{% endtrans %}</button>
+                        <a href="{% url 'item_detail' item.pk %}" class="btn btn-secondary">{% trans "Отмена" %}{% endtrans %}</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

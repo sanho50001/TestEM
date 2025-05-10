@@ -1,0 +1,54 @@
+{% extends 'ads/base.html' %}
+{% load i18n %}
+
+
+{% block title %}{% trans "Предложения - Бартерная система" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h1>{% trans "Предложения" %}</h1>
+            </div>
+
+            <div class="row">
+                {% for proposal in received_proposals %}
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        {% if proposal.image %}
+                        <img src="{{ proposal.image.url }}" class="card-img-top" alt="{{ proposal.title }}">
+                        {% endif %}
+                        <div class="card-body">
+                            <h5 class="card-title">{{ proposal.title }}</h5>
+                            <p class="card-text">{{ proposal.description|truncatewords:30 }}</p>
+                            <p class="card-text">
+                                <small class="text-muted">
+                                    {% trans "Автор" %}: {{ proposal.author.username }}
+                                </small>
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted">
+                                    {% trans "Создано" %}: {{ proposal.created_at|date:"d.m.Y H:i" }}
+                                </small>
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="{% url 'proposal_detail' proposal.pk %}" class="btn btn-primary">
+                                {% trans "Подробнее" %}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% empty %}
+                <div class="col-12">
+                    <div class="alert alert-info">
+                        {% trans "Предложений пока нет." %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 
