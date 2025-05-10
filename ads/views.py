@@ -145,12 +145,17 @@ def complete_exchange(request, pk):
         try:
             proposal.status = 'completed'
             proposal.save() 
+            # Меняем владельцев товаров
+            offered_item = proposal.offered_item
+            desired_item = proposal.desired_item
 
-            proposal.sender.items.add(proposal.desired_item)
-            proposal.receiver.items.add(proposal.offered_item)
-            proposal.sender.items.remove(proposal.offered_item)
-            proposal.receiver.items.remove(proposal.desired_item)
+            offered_item.owner = proposal.receiver
+            desired_item.owner = proposal.sender
 
+            offered_item.save()
+            desired_item.save()
+
+            # Удаляем предложение
             proposal.delete()
 
             messages.success(request, _('Обмен успешно завершен!'))
